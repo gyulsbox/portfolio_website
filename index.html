@@ -196,3 +196,11 @@
 </body>
 
 </html>
+
+git filter-branch -f --env-filter \ 
+    'if [ $GIT_COMMIT = 68e44f39c0732295a176412d1dde38e3bd7923c8 ]
+    then 
+        export GIT_AUTHOR_DATE="Fri Sep 3 10:00 2021 +0900"
+        export GIT_COMMITTER_DATE="Fri Sep 3 10:00 2021 +0900"
+    fi'
+
