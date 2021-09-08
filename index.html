@@ -50,21 +50,21 @@
         <div class="about__majors">
             <div class="major">
                 <div class="major__icon">
-                    <i class="fab fa-html5"></i>
+                    <i1 class="fab fa-html5"></i1>
                 </div>
                 <h2 class="major__title">Front-end</h2>
                 <div class="major__description">HTML, CSS, JavaScript, React</div>
             </div>
             <div class="major">
                 <div class="major__icon">
-                    <i class="fab fa-node-js"></i>
+                    <i2 class="fab fa-node-js"></i2>
                 </div>
                 <h2 class="major__title">Node.js</h2>
                 <div class="major__description">Node.js</div>
             </div>
             <div class="major">
                 <div class="major__icon">
-                    <i class="fas fa-server"></i>
+                    <i3 class="fas fa-server"></i3>
                 </div>
                 <h2 class="major__title">Back-end</h2>
                 <div class="major__description">Java, JavaScript, Node.js</div>
@@ -77,18 +77,21 @@
                     <p class="study__name">KH정보교육원 - (디지털컨버전스) 클라우드 컴퓨팅 웹 융합 응용SW엔지니어 양성 과정A</p>
                     <p class="study__period">2021.08.17 ~ 2022.03.22</p>
                 </div>
-                
+
             </div>
         </div>
     </section>
     <!-- Skills -->
     <section id="skills" class="section">
-        <h1>Skills</h1>
-        <h2>Skills & Attributes</h2>
-        <p>
-            비전공자로서 정말 광야와도 같은 땅이지만 백엔드와 프론트엔드를 조금씩 접하게되면서 공부의 방향성을 잡게되었습니다. 아직 많이 부족하지만 많은 공부를 스스로 하고있습니다. 또한 여러 기술 스택에도
-            관심이 많으며 배우고 싶습니다. 대인관계에 원만한 편이라 누구와도 편하게 같이 일을 할 수 있습니다. 물론, 개인작업도 가능합니다. 저와 함께 하신다면 정말 편한 친구라고 생각해주세요!
-        </p>
+        <div class="section__container">
+            <h1>Skills</h1>
+            <h2>Skills & Attributes</h2>
+            <p>
+                비전공자로서 정말 광야와도 같은 땅이지만 백엔드와 프론트엔드를 조금씩 접하게되면서 공부의 방향성을 잡게되었습니다. 아직 많이 부족하지만 많은 공부를 스스로 하고있습니다. 또한 여러 기술
+                스택에도
+                관심이 많으며 배우고 싶습니다. 대인관계에 원만한 편이라 누구와도 편하게 같이 일을 할 수 있습니다. 물론, 개인작업도 가능합니다. 저와 함께 하신다면 정말 편한 친구라고 생각해주세요!
+            </p>
+        </div>
         <div class="skillset">
             <div class="skillset__left">
                 <h3 class="skillset_title">Skills</h3>
@@ -96,19 +99,54 @@
                     <div class="skill__description">
                         <span>HTML</span>
                         <span>80%</span>
-                        <br><span>CSS</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>CSS</span>
                         <span>70%</span>
-                        <br><span>JavaScript</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>JavaScript</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>React</span>
                         <span>60%</span>
-                        <br><span>React</span>
-                        <span>80%</span>
-                        <br><span>Node.js</span>
-                        <span>80%</span>
-                        <br><span>Java</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 60%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>Node.js</span>
+                        <span>65%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 65%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>Java</span>
                         <span>80%</span>
                     </div>
                     <div class="skill__bar">
-                        <div class="skill__value"></div>
+                        <div class="skill__value" style="width: 80%;"></div>
                     </div>
                 </div>
             </div>
@@ -125,18 +163,19 @@
                     <h3 class="skillset_title">Etc</h3>
                     <ul class="etc__list">
                         <li><span>Git</span></li>
-                        <li><span>Japanese JLPT N3</span></li>
+                        <li><span>JLPT N3</span></li>
                     </ul>
                 </div>
             </div>
         </div>
+
     </section>
     <!-- Work -->
     <section id="work" class="section">
         <h1>My work</h1>
         <h3>Projects</h3>
         <div class="work__categories">
-            <button class="category__btn">
+            <button class="category__btn active">
                 All<span class="category__count">3</span>
             </button>
             <button class="category__btn">
@@ -167,7 +206,9 @@
             <div class="testmonial">
                 <img src="/imgs/testimonial/ex1.jpg" alt="people" class="testimonial__avatar">
                 <div class="testimonial__speech-bubble">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo natus a reprehenderit ut error, animi voluptatum. Deserunt totam ad, provident perferendis, facilis odit minus maxime explicabo sequi nisi pariatur dolores.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo natus a reprehenderit ut error,
+                        animi voluptatum. Deserunt totam ad, provident perferendis, facilis odit minus maxime explicabo
+                        sequi nisi pariatur dolores.</p>
                     <p class="name"><a href="">Park / 18th Base</a></p>
                 </div>
             </div>
@@ -176,7 +217,9 @@
             <div class="testmonial">
                 <img src="/imgs/testimonial/ex1.jpg" alt="people" class="testimonial__avatar">
                 <div class="testimonial__speech-bubble">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo natus a reprehenderit ut error, animi voluptatum. Deserunt totam ad, provident perferendis, facilis odit minus maxime explicabo sequi nisi pariatur dolores.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo natus a reprehenderit ut error,
+                        animi voluptatum. Deserunt totam ad, provident perferendis, facilis odit minus maxime explicabo
+                        sequi nisi pariatur dolores.</p>
                     <p class="name"><a href="">Park / 18th Base</a></p>
                 </div>
             </div>
