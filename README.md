@@ -34,6 +34,6 @@
     A. As a rookie, testimonials? X.
 
  ## 6. Changes in the Testimonials section.
-    If there is no answer even after considering the conditions
-    Change the replaceable part after thinking about it.
+    A. If there is no answer even after considering the conditions
+       Change the replaceable part after thinking about it.
     
