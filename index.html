@@ -25,27 +25,40 @@
             <img class="navbar__logo__image" src="/imgs/favicon.png" alt="logo" width="30px">
             <a href="#">&nbspAloofelicidad</a>
         </div>
-        <ul class="navbar__menu">
-            <li class="navbar__menu__item active">Home</li>
-            <li class="navbar__menu__item">About</li>
-            <li class="navbar__menu__item">Skills</li>
-            <li class="navbar__menu__item">Work</li>
-            <li class="navbar__menu__item">Testimonials</li>
-            <li class="navbar__menu__item">Contact</li>
-        </ul>
+        <div class="navbar__menu">
+            <ul class="navbar__menu">
+                <li class="navbar__menu__item active" data-link="#home">Home</li>
+                <li class="navbar__menu__item" data-link="#about">About</li>
+                <li class="navbar__menu__item" data-link="#skills">Skills</li>
+                <li class="navbar__menu__item" data-link="#work">Work</li>
+                <li class="navbar__menu__item" data-link="#testimonials">Testimonials</li>
+                <li class="navbar__menu__item" data-link="#contact">Contact</li>
+            </ul>
+        </div>
+
+        <!-- Toggle button -->
+        <button class="navbar__toggle-btn">
+            <i class="fas fa-bars"></i>
+        </button>
     </nav>
+
     <!-- Home -->
     <section id="home">
-        <img src="imgs/profile.jpg" alt="Aloofelicidad's profile photo" class="home__avatar">
-        <h1 class="home__title">Hello, <br>I'm Aloofelicidad</h1>
-        <h2 class="home__description">A Software developers who want to create something out of nothing </h2>
-        <button class="home__contact">Contact Me</button>
+        <div class="home__container">
+            <img src="imgs/profile.jpg" alt="Aloofelicidad's profile photo" class="home__avatar">
+            <h1 class="home__title">Hello, <br>I'm Aloofelicidad</h1>
+            <h2 class="home__description">
+                A Software developers who want to create something out of nothing
+            </h2>
+            <button class="home__contact">Contact Me</button>
+        </div>
     </section>
+
     <!-- About -->
-    <section id="about" class="section">
+    <section id="about" class="section section__container">
         <h1>About me</h1>
-        <p>A graduate of aeronautical maintenance who has been to the military training camp four times, is possessed by
-            Columbus to the New World called Web.
+        <p>A graduate of aeronautical maintenance who has been to the military training camp four times,
+            is possessed by Columbus to the New World called Web.
         </p>
         <div class="about__majors">
             <div class="major">
@@ -53,34 +66,43 @@
                     <i1 class="fab fa-html5"></i1>
                 </div>
                 <h2 class="major__title">Front-end</h2>
-                <div class="major__description">HTML, CSS, JavaScript, React</div>
+                <p class="major__description">
+                    HTML, CSS, JavaScript, React
+                </p>
             </div>
             <div class="major">
                 <div class="major__icon">
                     <i2 class="fab fa-node-js"></i2>
                 </div>
                 <h2 class="major__title">Node.js</h2>
-                <div class="major__description">Node.js</div>
+                <p class="major__description">
+                    Node.js
+                </p>
             </div>
             <div class="major">
                 <div class="major__icon">
                     <i3 class="fas fa-server"></i3>
                 </div>
                 <h2 class="major__title">Back-end</h2>
-                <div class="major__description">Java, JavaScript, Node.js</div>
+                <p class="major__description">
+                    Java, JavaScript, Node.js
+                </p>
             </div>
         </div>
         <div class="about__study">
             <div class="study">
-                <img width="75px" height="20px" src="/imgs/Studies/kh.png" alt="KH 정보교육원" class="study__logo">
+                <img width="85px" height="25px" src="/imgs/Studies/kh.png" alt="KH 정보교육원" class="study__logo">
                 <div class="study__description">
-                    <p class="study__name">KH정보교육원 - (디지털컨버전스) 클라우드 컴퓨팅 웹 융합 응용SW엔지니어 양성 과정A</p>
-                    <p class="study__period">2021.08.17 ~ 2022.03.22</p>
+                    <p class="study__name">
+                        KH정보교육원 - (디지털컨버전스) 클라우드 컴퓨팅 웹 융합 응용SW엔지니어 양성 과정A
+                    </p>
+                    <p class="study__period">
+                        2021.08.17 ~ 2022.03.22
+                    </p>
                 </div>
-
             </div>
-        </div>
     </section>
+
     <!-- Skills -->
     <section id="skills" class="section">
         <div class="section__container">
@@ -93,140 +115,149 @@
                 relationship, so I can work with anyone comfortably. Of course, you can also do personal work. If you're
                 with me, please think of me as a really comfortable friend.
             </p>
-        </div>
-        <div class="skillset">
-            <div class="skillset__left">
-                <h3 class="skillset_title">Skills</h3>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>HTML</span>
-                        <span>80%</span>
+            <div class="skillset">
+                <div class="skillset__left">
+                    <h3 class="skillset_title">Skills</h3>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>HTML</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 80%;"></div>
+                        </div>
                     </div>
-                    <div class="skill__bar">
-                        <div class="skill__value" style="width: 80%;"></div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>CSS</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>JavaScript</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>React</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>Node.js</span>
+                            <span>65%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>Java</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 80%;"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>CSS</span>
-                        <span>70%</span>
+                <div class="skillset_right">
+                    <div class="tools">
+                        <h3 class="skillset_title">Tools</h3>
+                        <ul class="tools__list">
+                            <li><span>Visual Studio Code</span></li>
+                            <li><span>Eclipse</span></li>
+                            <li><span>Atom</span></li>
+                            <li><span>Miro</span></li>
+                        </ul>
                     </div>
-                    <div class="skill__bar">
-                        <div class="skill__value" style="width: 70%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>JavaScript</span>
-                        <span>70%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value" style="width: 70%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>React</span>
-                        <span>60%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value" style="width: 60%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>Node.js</span>
-                        <span>65%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value" style="width: 65%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>Java</span>
-                        <span>80%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value" style="width: 80%;"></div>
+                    <div class="etc">
+                        <h3 class="skillset_title">Etc</h3>
+                        <ul class="etc__list">
+                            <li><span>Git</span></li>
+                            <li><span>JLPT N3</span></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="skillset_right">
-                <div class="tools">
-                    <h3 class="skillset_title">Tools</h3>
-                    <ul class="tools__list">
-                        <li><span>Visual Studio Code</span></li>
-                        <li><span>Eclipse</span></li>
-                        <li><span>Atom</span></li>
-                    </ul>
-                </div>
-                <div class="etc">
-                    <h3 class="skillset_title">Etc</h3>
-                    <ul class="etc__list">
-                        <li><span>Git</span></li>
-                        <li><span>JLPT N3</span></li>
-                    </ul>
-                </div>
-            </div>
         </div>
-
     </section>
+
     <!-- Work -->
     <section id="work" class="section">
-        <h1>My work</h1>
-        <h3>Projects</h3>
-        <div class="work__categories">
-            <button class="category__btn active">
-                All<span class="category__count">3</span>
-            </button>
-            <button class="category__btn">
-                Front-end<span class="category__count">1</span>
-            </button>
-            <button class="category__btn">
-                Back-end<span class="category__count">1</span>
-            </button>
-            <button class="category__btn">
-                React<span class="category__count">1</span>
-            </button>
-        </div>
-        <div class="work__projects">
-            <a href="https://github.com/gyulsbox/AlgorithmPractice" class="project" target="blank">
-                <img class="project__img" src="/imgs/Projects/ex1.jpg" alt="예시사진">
-                <div class="project__disciption">
-                    <h3>Project One</h3>
-                    <span>언제가 하게 될 프로젝트 maybe this is my fisrt project</span>
-                </div>
-            </a>
+        <div class="section__container">
+            <h1>My work</h1>
+            <h3>Projects</h3>
+            <div class="work__categories">
+                <button class="category__btn active">
+                    All<span class="category__count">3</span>
+                </button>
+                <button class="category__btn">
+                    Front-end<span class="category__count">1</span>
+                </button>
+                <button class="category__btn">
+                    Back-end<span class="category__count">1</span>
+                </button>
+                <button class="category__btn">
+                    React<span class="category__count">1</span>
+                </button>
+            </div>
+            <div class="work__projects">
+                <a href="https://github.com/gyulsbox/AlgorithmPractice" class="project" target="blank">
+                    <img class="project__img" src="/imgs/Projects/ex1.jpg" alt="예시사진">
+                    <div class="project__disciption">
+                        <h3>Project One</h3>
+                        <span>언제가 하게 될 프로젝트 maybe this is my fisrt project</span>
+                    </div>
+                </a>
+            </div>
         </div>
     </section>
+
     <!-- Testimonials -->
     <section id="testimonials" class="section">
-        <h1>Testimonials</h1>
-        <h2>See what they say about me</h2>
-        <div class="testimonials">
-            <div class="testmonial">
-                <img src="/imgs/testimonial/ex1.jpg" alt="people" class="testimonial__avatar">
-                <div class="testimonial__speech-bubble">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo natus a reprehenderit ut error,
-                        animi voluptatum. Deserunt totam ad, provident perferendis, facilis odit minus maxime explicabo
-                        sequi nisi pariatur dolores.</p>
-                    <p class="name"><a href="">Park</a> / 18th Base</p>
+        <div class="section__container">
+            <h1>Testimonials</h1>
+            <h3>See what they say about me</h3>
+            <div class="testimonials">
+                <div class="testmonial">
+                    <img src="/imgs/testimonial/ex1.jpg" alt="people" class="testimonial__avatar">
+                    <div class="testimonial__speech-bubble">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo natus a reprehenderit ut error,
+                            animi voluptatum. Deserunt totam ad, provident perferendis, facilis odit minus maxime
+                            explicabo
+                            sequi nisi pariatur dolores.</p>
+                        <p class="name"><a href="">Park</a> / 18th Base</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="testimonials">
-            <div class="testmonial">
-                <div class="testimonial__speech-bubble">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo natus a reprehenderit ut error,
-                        animi voluptatum. Deserunt totam ad, provident perferendis, facilis odit minus maxime explicabo
-                        sequi nisi pariatur dolores.</p>
-                    <p class="name"><a href="">Park</a> / 18th Base</p>
+            <div class="testimonials">
+                <div class="testmonial">
+                    <div class="testimonial__speech-bubble">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo natus a reprehenderit ut error,
+                            animi voluptatum. Deserunt totam ad, provident perferendis, facilis odit minus maxime
+                            explicabo
+                            sequi nisi pariatur dolores.</p>
+                        <p class="name"><a href="">Park</a> / 18th Base</p>
+                    </div>
+                    <img src="/imgs/testimonial/ex1.jpg" alt="people" class="testimonial__avatar">
                 </div>
-                <img src="/imgs/testimonial/ex1.jpg" alt="people" class="testimonial__avatar">
             </div>
         </div>
     </section>
+
     <!-- Contact -->
     <section id="contact" class="section">
         <h1 class="contact__title">Let's talk</h1>
@@ -235,7 +266,7 @@
             <a href="https://github.com/gyulsbox" target="_blank">
                 <i class="fab fa-github"></i>
             </a>
-            <a href="https://www.instagram.com/aloofelicidad/">
+            <a href="https://www.instagram.com/aloofelicidad/" target="_blank">
                 <i class="fab fa-instagram"></i>
             </a>
         </div>
@@ -243,6 +274,11 @@
             2021 Aloofelicidad - All rights reserved
         </p>
     </section>
+
+    <!-- Arrow up -->
+    <button class="arrow-up">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 </body>
 
 </html>
