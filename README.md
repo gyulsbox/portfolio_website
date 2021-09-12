@@ -17,7 +17,7 @@
  ## 2. About me<br>
      A. Change the type of technology stack animation.
      B. Smooth, Clean and Unity
-     C. ransition || Transform Do not use excessively.
+     C. Transition || Transform Do not use excessively.
        a. Structure that smoothes-pop-up when hover
        b. Staged structure when Hover is performed.
 
