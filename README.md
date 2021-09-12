@@ -28,7 +28,7 @@
     C. Overall needs to be modified.
 
  ## 4. My works
-    A. Btn needs to change too much 쌈마이.
+    A. Btn needs to change. it's too much 쌈마이.
 
  ## 5. Testimonials
     A. As a rookie, testimonials? X.
