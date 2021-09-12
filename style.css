@@ -380,8 +380,8 @@ i3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 230px;
-  height: 280px;
+  width: 240px;
+  height: 290px;
   margin: 2px;
   background-color: var(--color-light-white);
 }
