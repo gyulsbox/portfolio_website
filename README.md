@@ -3,6 +3,9 @@
  Creating a website for the portfolio.<br>
  It is still in progress, and HTML, CSS, and JavaScript are used.
  
+ The screen configuration of the mobile scale is still at the shell level and will be configured at the end.<br>
+ Currently, it is optimized for desktops. (width: more than 752px)
+ 
  I wrote a list at the back, which I just wrote down what to modify.
  
 ### latest update
