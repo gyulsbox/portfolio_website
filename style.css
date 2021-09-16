@@ -562,11 +562,13 @@ i3 {
   font-size: var(--font-large);
   margin: 24px 0;
 }
+.contact__links i {
+  transition: all var(--animation-duration) ease-in;
+}
 
 .contact__links i:hover {
   transform: scale(1.2);
   color: var(--color-yellow);
-  transition: all var(--animation-duration) ease-in;
 }
 
 /* Scroll */
@@ -588,6 +590,10 @@ i3 {
 .arrow-up.visible {
   opacity: 1;
   pointer-events: auto;
+}
+
+.arrow-up:hover {
+  transform: rotateY(360deg);
 }
 
 /* For below 768px screen width */
