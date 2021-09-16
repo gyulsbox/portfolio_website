@@ -60,6 +60,14 @@ workBtnContainer.addEventListener('click', (e) => {
   if (filter == null) {
     return;
   }
+
+  // Remove selection from the previous item and select the new one
+  const active = document.querySelector('.category__btn.selected');
+  active.classList.remove('selected');
+  const target =
+    e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
+  target.classList.add('selected');
+
   projectContainer.classList.add('anim-out');
   setTimeout(() => {
     projects.forEach((project) => {
@@ -76,23 +84,4 @@ workBtnContainer.addEventListener('click', (e) => {
 function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector);
   scrollTo.scrollIntoView({ behavior: 'smooth' });
-}
-
-function handleMouseMove(event) {
-  const height = window.innerHeight;
-  const width = window.innerWidth;
-  // Creates angles of (-20, -20) (left, bottom) and (20, 20) (right, top)
-  const yAxisDegree = (event.pageX / width) * 40 - 20;
-  const xAxisDegree = (event.pageY / height) * -1 * 40 + 20;
-  target.style.transform = `rotateY(${yAxisDegree}deg) rotateX(${xAxisDegree}deg)`;
-  // Set the sheen position
-  setSheenPosition(event.pageX / width, event.pageY / width);
-}
-
-function setSheenPosition(xRatio, yRatio) {
-  // This creates a "distance" up to 400px each direction to offset the sheen
-  const xOffset = 1 - (xRatio - 0.5) * 800;
-  const yOffset = 1 - (yRatio - 0.5) * 800;
-  target.style.setProperty('--sheenX', `${xOffset}px`);
-  target.style.setProperty('--sheenY', `${yOffset}px`);
 }
