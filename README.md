@@ -9,7 +9,7 @@
  I wrote a list at the back, which I just wrote down what to modify.
  
 ### latest update
- - 21.09.13
+ - 21.09.18
  
  ## 1. Home, Navbar, Contact <br>
     A. Reset logo, background, profile.
