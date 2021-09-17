@@ -593,7 +593,7 @@ i3 {
 }
 
 .arrow-up:hover {
-  transform: rotateY(360deg);
+  transform: rotateY(360deg) translateY(-30px);
 }
 
 /* For below 768px screen width */
@@ -605,13 +605,6 @@ i3 {
     --font-regular: 16px;
     --font-small: 14px;
     --font-micro: 12px;
-  }
-
-  .navbar__toggle-btn {
-    display: block;
-    top: 16 px;
-    right: 16px;
-    font-size: var(--font-medium);
   }
 
   #navbar {
@@ -636,7 +629,21 @@ i3 {
   }
 
   .navbar__name {
-    padding-top: 8px;
+    padding-top: 5px;
+  }
+
+  .navbar__logo__image {
+    width: 20px;
+    height: 20px;
+    margin-top: 7px;
+  }
+
+  .navbar__toggle-btn {
+    display: block;
+    top: 16px;
+    right: 16px;
+    margin-top: 6px;
+    font-size: var(--font-medium);
   }
 
   .section {
