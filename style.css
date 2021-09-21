@@ -2,7 +2,7 @@
 :root {
   /* Color */
   --color-white: #ffffff;
-  --color-light-white: #eeeeee;
+  --color-light-white: #e1e2e1;
   --color-dark-white: #bdbdbd;
   --color-pink: #fe918d;
   --color-dark-pink: #ff6863;
@@ -46,7 +46,7 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Gowun Dodum", sans-serif;
   margin: 0;
   cursor: default;
 }
@@ -283,22 +283,22 @@ div[class*="box"] {
 .major__icon i1,
 i2,
 i3 {
-  transition: all var(--animation-duration) ease;
+  transition: all 0.4s ease-in-out;
 }
 
 .major__icon i1:hover {
   color: var(--color-dark-pink);
-  transform: scale(1.7);
+  transform: rotateY(360deg) scale(1.7);
 }
 
 .major__icon i2:hover {
   color: var(--color-green);
-  transform: scale(1.7);
+  transform: rotateY(360deg) scale(1.7);
 }
 
 .major__icon i3:hover {
   color: var(--color-dark-blue);
-  transform: scale(1.5);
+  transform: rotateY(360deg) scale(1.5);
 }
 
 .major__title,
