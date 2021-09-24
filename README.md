@@ -12,7 +12,7 @@ I wrote a list at the back, which I just wrote down what to modify.
 
 ### latest update
 
-- 21.09.22
+- 21.09.24
 
 ## 1. Home, Navbar, Contact <br>
 
