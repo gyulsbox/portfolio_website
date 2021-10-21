@@ -12,7 +12,8 @@ I wrote a list at the back, which I just wrote down what to modify.
 
 ### latest update
 
-- 21.09.24
+- 21.10.21 - Custom Shape Divider SVG added
+- ~~21.09.24~~
 
 ## 1. Home, Navbar, Contact <br>
 
