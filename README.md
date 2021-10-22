@@ -16,10 +16,14 @@ I wrote a list at the back, which I just wrote down what to modify.
 - ~~21.10.21 - Custom Shape Divider SVG added~~
 - ~~21.09.24~~
 
-## 1. Home, Navbar, Contact <br>
+### Occured Problems
 
-    A. Reset logo, background, profile.
-    B. Include (Skills, contact) colors for each part.
+- 1. IPhone 12 Mini(may all of IPhone series within max-width 768px) has a problem on Arrow-up. <br>CSS on width doesn't working.. shit... If I had a Mac..!!!!
+
+## 1. ~~Home, Navbar, Contact~~ -> Solved<br>
+
+    A. [Solved] Reset logo, background, profile.
+    B. [Solved] Include (Skills, contact) colors for each part.
        a. Aloofelicidad...
           i. Think carefully
 
@@ -42,11 +46,12 @@ I wrote a list at the back, which I just wrote down what to modify.
 
     A. Btn needs to change. it's too much 쌈마이.
 
-## 5. Testimonials
+## 5. ~~Testimonials~~ -> Lastly
 
-    A. As a rookie, testimonials? X.
+    A. [Solved] As a rookie, testimonials? X.
 
-## 6. Changes in the Testimonials section.
+## ~~6. Changes in the Testimonials section.~~ -> Solved
 
-    A. If there is no answer even after considering the conditions
+    A. [Solved] If there is no answer even after considering the conditions
        Change the replaceable part after thinking about it.
+       
