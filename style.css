@@ -104,7 +104,7 @@ p {
 .custom-shape-divider-bottom-home {
   position: relative;
   left: 0;
-  top: 747px;
+  top: 746px;
   width: 100%;
   line-height: 0;
   transform: rotate(180deg);
@@ -725,6 +725,7 @@ i3 {
   pointer-events: none;
   transition: all var(--animation-duration) ease-in;
   z-index: 5;
+  isolation: isolate;
 }
 
 .arrow-up.visible {
@@ -732,7 +733,7 @@ i3 {
   pointer-events: auto;
 }
 
-.arrow-up:hover {
+.arrow-up.visible:hover {
   transform: rotateY(360deg) translateY(-30px);
 }
 
@@ -865,25 +866,56 @@ i3 {
 
 /* For below 442px screen width */
 @media screen and (max-width: 442px) {
+  .home__contact {
+    width: 40%;
+    height: 40%;
+  }
+
   /*  Custom Shape Dividers */
   .custom-shape-divider-bottom-home {
-    top: 705px;
+    top: 680px;
   }
 }
 
 /* For below 400px screen width */
 @media screen and (max-width: 400px) {
+  #home {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .home__description {
+    width: 320px;
+    margin: auto;
+  }
+
   .home__avatar {
     width: 200px;
     height: 200px;
   }
 
+  .home__contact {
+    width: 40%;
+    height: 40%;
+  }
+
+  .major__icon {
+    width: 130px;
+    height: 130px;
+    line-height: 130px;
+    font-size: 70px;
+  }
+
   /*  Custom Shape Dividers */
   .custom-shape-divider-bottom-home {
-    top: 579px;
+    top: 571px;
   }
 
   .custom-shape-divider-bottom-home svg {
     height: 30px;
   }
+}
+
+/* For below 377px screen width */
+@media screen and (max-width: 378px) {
 }
