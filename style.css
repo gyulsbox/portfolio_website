@@ -885,7 +885,7 @@ i3 {
   }
 
   .home__description {
-    width: 320px;
+    width: 375px;
     margin: auto;
   }
 
@@ -902,13 +902,28 @@ i3 {
   .major__icon {
     width: 130px;
     height: 130px;
-    line-height: 130px;
-    font-size: 70px;
+    line-height: 123px;
+    font-size: 60px;
+  }
+
+  .major__icon i1:hover {
+    color: var(--color-dark-pink);
+    transform: rotateY(360deg) scale(1.4);
+  }
+
+  .major__icon i2:hover {
+    color: var(--color-dark-blue);
+    transform: rotateY(360deg) scale(1.4);
+  }
+
+  .major__icon i3:hover {
+    color: var(--color-green);
+    transform: rotateY(360deg) scale(1.2);
   }
 
   /*  Custom Shape Dividers */
   .custom-shape-divider-bottom-home {
-    top: 571px;
+    top: 572px;
   }
 
   .custom-shape-divider-bottom-home svg {
