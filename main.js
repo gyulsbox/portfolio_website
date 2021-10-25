@@ -88,7 +88,7 @@ workBtnContainer.addEventListener("click", (e) => {
   }, 300);
 });
 
-const sectionIds = ["#home", "#about", "#skills", "#work", "#testimonials", "#contact"];
+const sectionIds = ["#home", "#about", "#skills", "#work", "#lastlys", "#contact"];
 
 const sections = sectionIds.map((id) => document.querySelector(id));
 const navItems = sectionIds.map((id) => document.querySelector(`[data-link="${id}"]`));

@@ -160,7 +160,7 @@ p {
   z-index: -1;
 }
 
-.custom-shape-divider-top-testimonials {
+.custom-shape-divider-top-lastlys {
   position: relative;
   top: 0;
   left: 0;
@@ -169,14 +169,14 @@ p {
   z-index: 1;
 }
 
-.custom-shape-divider-top-testimonials svg {
+.custom-shape-divider-top-lastlys svg {
   position: absolute;
   display: block;
   width: calc(100%);
   height: 100px;
 }
 
-.custom-shape-divider-top-testimonials .shape-fill {
+.custom-shape-divider-top-lastlys .shape-fill {
   fill: #ffffff;
 }
 
@@ -639,45 +639,45 @@ i3 {
   background-color: var(--color-dark-white);
 }
 
-/* Testimonial */
-#testimonials {
+/* lastlys */
+#lastlys {
   background-color: var(--color-light-white);
 }
 
-.testimonials {
+.lastlys {
   margin: 40px;
 }
 
-.testimonial {
+.lastly {
   display: flex;
   margin: 32px 0px;
 }
 
-.testimonial__avatar {
+.lastly__avatar {
   width: 150px;
   height: 150px;
   border-radius: 50%;
 }
 
-.testimonial__avatar:nth-child(odd) {
+.lastly__avatar:nth-child(odd) {
   margin-right: 40px;
 }
 
-.testimonial__avatar:nth-child(even) {
+.lastly__avatar:nth-child(even) {
   margin-left: 40px;
 }
 
-.testimonial__speech-bubble {
+.lastly__speech-bubble {
   padding: 18px;
   background-color: var(--color-white);
   border-radius: var(--size-border-radius);
 }
 
-.testimonial__speech-bubble p {
+.lastly__speech-bubble p {
   color: var(--color-light-grey);
 }
 
-.testimonial__speech-bubble a {
+.lastly__speech-bubble a {
   color: var(--color-pink);
 }
 
@@ -815,22 +815,22 @@ i3 {
     flex-grow: 1;
   }
 
-  .testimonial {
+  .lastly {
     flex-direction: column;
     align-items: center;
   }
 
-  .testimonial__avatar {
+  .lastly__avatar {
     width: 120px;
     height: 120px;
   }
-  .testimonial__avatar:nth-child(even),
-  .testimonial__avatar:nth-child(odd) {
+  .lastly__avatar:nth-child(even),
+  .lastly__avatar:nth-child(odd) {
     margin: 0;
     margin-bottom: 8px;
   }
 
-  .testimonial__speech-bubble {
+  .lastly__speech-bubble {
     order: 1;
   }
 
@@ -856,7 +856,7 @@ i3 {
   .custom-shape-divider-top-work svg {
     height: 50px;
   }
-  .custom-shape-divider-top-testimonials svg {
+  .custom-shape-divider-top-lastlys svg {
     height: 50px;
   }
   .custom-shape-divider-bottom-contact svg {
