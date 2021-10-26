@@ -104,7 +104,7 @@ p {
 .custom-shape-divider-bottom-home {
   position: relative;
   left: 0;
-  top: 746px;
+  top: 743px;
   width: 100%;
   line-height: 0;
   transform: rotate(180deg);
@@ -539,38 +539,52 @@ div[class*="box"] {
 .category__btn {
   border: 1px solid var(--color-dark-white);
   border-radius: var(--size-border-radius);
-  font-size: var(--font-regular);
-  padding: 8px 48px;
-  width: 197px;
-  text-align: center;
+  font-size: var(--weight-semi-bold);
+  padding: 8px 12px;
+  padding-left: 40px;
+  padding-right: 40px;
+  transition: background-color 0.4s, color 0.4s, border 0.4s;
+}
+
+.category_list {
   position: relative;
+  left: 11px;
+  transition: left 0.4s;
+}
+
+.category__btn:hover .category_list,
+.category__btn.selected .category_list {
+  left: 0px;
 }
 
 .category__btn.selected,
 .category__btn:hover {
-  background-color: var(--color-light-green);
+  background-color: var(--color-bg-green);
+  border: 1px solid var(--color-bg-green);
   color: var(--color-white);
 }
 
-.category__btn.seltected .category__count,
+.category__btn.selected .category__count,
 .category__btn:hover .category__count {
   opacity: 1;
-  top: 8px;
+  top: 0px;
 }
 
 .category__count {
-  background-color: var(--color-orange);
-  border-radius: 50%;
-  color: var(--color-white);
-  width: 20px;
-  height: 20px;
-  line-height: 20px;
+  font-weight: var(--weight-regular);
   display: inline-block;
-  position: absolute;
-  top: -20px;
-  right: 16px;
+  width: 21px;
+  height: 21px;
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  text-align: center;
+  line-height: 21px;
+  border-radius: 50%;
   opacity: 0;
-  transition: all var(--animation-duration) ease;
+  position: relative;
+  top: -20px;
+  left: 3px;
+  transition: top 0.4s, opacity 0.4s;
 }
 
 .work__projects {

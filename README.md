@@ -7,20 +7,20 @@ Creating a website for the portfolio. which my first project<br>
 It is still in progress, and HTML, CSS, and Pure JavaScript are used.
 (In the next project, I want to use many stacks such as React and SASS. Therefore, a lot of study will be required. )
 
-(Reactive websites are almost complete)
+(Reactive websites are almost complete)<br>
 ~~The screen configuration of the mobile scale is still at the shell level and will be configured at the end.
 Currently, it is optimized for desktops. (width: more than 752px)~~
 
 ## Latest Update
 
-- 21.10.26 - Changed the animation of the major icon in the About section.
+- 21.10.26 - Changed the animation of the major__icon & category__btn   
 - ~~21.10.22 - Testimonial renewal as lastly, TextScramble Js added~~
 - ~~21.10.21 - Custom Shape Divider SVG added~~
 - ~~21.09.24~~
 
 ## Occured Problems
 
-     1. IPhone 12 Mini(may all of IPhone series within max-width 768px) has a problem on Arrow-up.
+    1. IPhone 12 Mini(may all of IPhone series within max-width 768px) has a problem on Arrow-up.
         CSS on width doesn't working.. shit... If I had a Mac..!!!!
 
 ## List of items that need to be solve
