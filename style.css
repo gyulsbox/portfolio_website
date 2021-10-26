@@ -369,25 +369,8 @@ div[class*="box"] {
   margin: 80px;
 }
 
-#blob {
-  position: absolute;
-  opacity: 40%;
-  /* z-index: -1; */
-}
-
-.blob_about {
-  left: -300px;
-  top: 300px;
-  width: 60%;
-}
-
-.blob_about_2 {
-  left: 700px;
-  top: 250px;
-  width: 60%;
-}
-
 .major__icon {
+  position: relative;
   width: 170px;
   height: 170px;
   line-height: 170px;
@@ -397,27 +380,48 @@ div[class*="box"] {
   border: 1px solid var(--color-bg-green);
   border-radius: 50%;
   margin-bottom: 16px;
+  transition: all 700ms ease;
 }
 
-.major__icon i1,
-i2,
-i3 {
-  transition: all 0.4s ease-in-out;
+.major__icon__blobs {
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0px;
+  z-index: -1;
 }
 
-.major__icon i1:hover {
-  color: var(--color-dark-pink);
-  transform: rotateY(360deg) scale(1.7);
+.major__icon__blobs div {
+  background-color: var(--color-bg-green);
+  width: 45%;
+  height: 100%;
+  border-radius: 100%;
+  position: absolute;
+  transform: scale(1.4) translateY(125%);
+  transition: all 0.7s ease;
 }
 
-.major__icon i2:hover {
-  color: var(--color-dark-blue);
-  transform: rotateY(360deg) scale(1.7);
+.major__icon__blobs > div:nth-child(1) {
+  left: -5%;
+}
+.major__icon__blobs > div:nth-child(2) {
+  left: 30%;
+  transition-delay: 0.06s;
+}
+.major__icon__blobs > div:nth-child(3) {
+  left: 66%;
+  transition-delay: 0.025s;
 }
 
-.major__icon i3:hover {
-  color: var(--color-green);
-  transform: rotateY(360deg) scale(1.5);
+.major__icon:hover {
+  color: var(--color-white);
+}
+
+.major__icon:hover .major__icon__blobs > div {
+  transform: scale(1.4) translateY(0) translateZ(0);
 }
 
 .major__title,
@@ -453,7 +457,6 @@ i3 {
 }
 
 /* Skill */
-
 #skills {
   background-color: var(--color-yellow);
 }
@@ -494,6 +497,7 @@ i3 {
 .skill__value {
   height: 5px;
   background-color: var(--color-orange);
+  transition: width 3.0s ease-out;
 }
 
 .skillset_right {
@@ -639,7 +643,7 @@ i3 {
   background-color: var(--color-dark-white);
 }
 
-/* lastlys */
+/* Lastlys */
 #lastlys {
   background-color: var(--color-light-white);
 }
