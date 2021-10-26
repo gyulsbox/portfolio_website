@@ -497,7 +497,7 @@ div[class*="box"] {
 .skill__value {
   height: 5px;
   background-color: var(--color-orange);
-  transition: width 3.0s ease-out;
+  transition: width 3s ease-out;
 }
 
 .skillset_right {
