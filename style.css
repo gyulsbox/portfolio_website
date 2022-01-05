@@ -49,6 +49,12 @@ body {
   font-family: "Gowun Dodum", sans-serif;
   margin: 0;
   cursor: default;
+  /* /* -ms-overflow-style: none; -- IE & Edge */
+  scrollbar-width: none; /* -- Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
 }
 
 a {
