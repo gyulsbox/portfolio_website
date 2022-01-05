@@ -625,6 +625,9 @@ div[class*="box"] {
 }
 
 .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
   transform: translateY(-50%) translateZ(60px) scale(0.94);
   top: 50%;
