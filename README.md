@@ -12,8 +12,8 @@ It is still in progress, and HTML, CSS, and Pure JavaScript are used.
 Currently, it is optimized for desktops. (width: more than 752px)~~
 
 ## Latest Update
-
-- 21.10.26 - Changed the animation of the major__icon & category__btn   
+- 22.01.05 - Work Section Full Changed
+- ~~21.10.26 - Changed the animation of the major__icon & category__btn~~   
 - ~~21.10.22 - Testimonial renewal as lastly, TextScramble Js added~~
 - ~~21.10.21 - Custom Shape Divider SVG added~~
 - ~~21.09.24~~
