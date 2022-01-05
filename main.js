@@ -1,7 +1,8 @@
 "use strict";
 
 // Make navbar transparent when it is on the top
-const navbar = document.querySelector("#navbar");``
+const navbar = document.querySelector("#navbar");
+``;
 const navbarHeight = navbar.getBoundingClientRect().height;
 document.addEventListener("scroll", () => {
   if (window.scrollY > navbarHeight) {
@@ -194,7 +195,7 @@ class TextScramble {
 }
 
 // TextScramble's Phrases
-const phrases = ["Imagination & Passion", "And a little bit of delicacy", "A developers", "who wants to code sophistication", "That's who i want to be"];
+const phrases = ["Imagination & Passion", "And a little bit of delicacy", "A Frontend Developer", "who wants to code sophistication", "That's who i want to be"];
 
 const el = document.querySelector(".text");
 const fx = new TextScramble(el);

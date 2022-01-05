@@ -526,7 +526,7 @@ div[class*="box"] {
 }
 
 .work {
-  max-width: 1920px;
+  max-width: 95%;
 }
 
 .work__categories {
@@ -534,17 +534,19 @@ div[class*="box"] {
 }
 
 .wrapper {
-  width: 90%;
-  margin: 0 auto;
-  max-width: 80rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  max-width: 100rem;
 }
 
 .cols {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  /* -ms-flex-wrap: wrap;
+  flex-wrap: wrap; */
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
