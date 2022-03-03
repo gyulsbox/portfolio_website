@@ -52,6 +52,7 @@ body {
   cursor: default;
   /* /* -ms-overflow-style: none; -- IE & Edge */
   scrollbar-width: none; /* -- Firefox */
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -905,6 +906,10 @@ div[class*="box"] {
     bottom: 16px;
   }
 
+  .cols {
+    flex-direction: column;
+  }
+
   /*  Custom Shape Dividers */
   .custom-shape-divider-bottom-home {
     top: 679px;
@@ -997,20 +1002,20 @@ div[class*="box"] {
 @media screen and (max-width: 378px) {
 }
 
-@media screen and (max-width: 64rem){
-  .col{
+@media screen and (max-width: 64rem) {
+  .col {
     width: calc(33.333333% - 2rem);
   }
 }
 
-@media screen and (max-width: 48rem){
-  .col{
+@media screen and (max-width: 48rem) {
+  .col {
     width: calc(50% - 2rem);
   }
 }
 
-@media screen and (max-width: 32rem){
-  .col{
+@media screen and (max-width: 32rem) {
+  .col {
     width: 100%;
     margin: 0 0 2rem 0;
   }
